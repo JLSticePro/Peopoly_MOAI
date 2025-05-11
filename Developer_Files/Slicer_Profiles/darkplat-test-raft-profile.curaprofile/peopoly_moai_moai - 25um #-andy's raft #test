@@ -1,0 +1,32 @@
+[general]
+version = 2
+name = Moai - 25um #-Andy's raft #test
+definition = peopoly_moai
+
+[metadata]
+type = quality_changes
+setting_version = 1
+quality_type = extra_high
+
+[values]
+adhesion_type = raft
+layer_0_z_overlap = 0.05
+layer_height_0 = 0.025
+raft_airgap = 0.0
+raft_base_line_spacing = 0.1
+raft_base_line_width = 0.1
+raft_base_speed = 5
+raft_base_thickness = 0.1
+raft_interface_line_spacing = 0.1
+raft_interface_line_width = 0.1
+raft_interface_speed = 5
+raft_interface_thickness = 0.1
+raft_margin = 3
+raft_speed = 80.0
+raft_surface_layers = 15
+raft_surface_thickness = 0.1
+speed_layer_0 = 180
+speed_print = 180
+speed_slowdown_layers = 0
+wall_thickness = 100
+

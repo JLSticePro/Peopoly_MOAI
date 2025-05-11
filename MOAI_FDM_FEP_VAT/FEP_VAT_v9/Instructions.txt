@@ -1,0 +1,184 @@
+MOAI FEP Vat by JLS
+
+This vat is designed to use minimal parts and only simple hand-tools to make and assemble.
+
+Tools you will need:
+	FDM / FFF 3D Printer with 0.4mm or 0.6mm nozzle
+	Drill (hand or powered)
+	Drill bits: 3mm, 4mm or 1/8 inch, 5/32 inch
+	COARSE sandpaper
+	Masking tape (BLUE removeable is preferred)
+	Metal putty knife
+	Simple pliers
+	Utility or Razor knife
+	Hex wrenches to match machine screws
+	Small, pointy Phillips or J1 screwdriver (4mm or smaller)
+	Microfiber cloth at least as large as the vat.
+
+Parts you will need:
+	( 1) FEP sheet large enough to extend beyond the edges of the new vat
+	(26) M4 x 12mm BUTTON HEAD stainless steel machine screws and M4 Washers
+	(1m) 12mm x 4mm (1/2 x 5/32) felt strip and contact adhesive, or use a self-adhesive strip
+		(alternative sizes acceptable) (commonly called weather stripping)
+
+Preparing the acrylic build surface:
+------------------------------------
+	
+You may use the acrylic plate from the bottom of your damaged Silicon vat for your new FEP vat.
+	* You must be careful not to scratch the acrylic in the build area of the plate!
+	* The edges not part of the build area can have scratches, but not raised areas when complete.
+	* The bottom of the plate will be used as the new top of the plate as it's edges will be less damaged.
+Acrylic plate salvage process:
+	Carefully peel the PDMS / Silicone material out of the vat.
+	Apply masking tape to the RESIN area inside the vat and again on the bottom side inside the ring.
+	Use the pliers to break away the vertical sections of the vat.
+	Use the putty knife to chip away any remaining acrylic on the edges.
+	Use the putty knife to scrape the edges until flat.
+	Use the coarse sandpaper to smooth the edges.
+	Use the putty knife to remove the bottom ring and scrape any glue away.
+	Use the sandpaper to smooth the bottom edges of the plate if needed.
+
+You may use a new piece of 3mm clear acrylic plate. (Lexan is untested)
+	* Many hardware stores can cut the acrylic to size. Take the drill guide with you!
+	* You should round the corners, but they do not need to be perfectly matched to the guide.
+	* Use sandpaper to buff the edges of the acrylic to prevent injury from sharp edges.
+
+Print the drill guide:
+	Thick layers, Draft quality. You will only need the part once.
+
+Drill the holes in the acrylic plate:
+	* USE LIGHT PRESSURE AND SLOW SPEED when drilling acrylic!
+	Remove any old masking tape, and plastic if sheet is new.
+	Cover BOTH sides of the acrylic with masking tape.
+	Tape the drill guide to one side of the plate.
+	Use the smaller drill to drill straight through the acrylic for all holes in the guide.
+	Remove the drill guide.
+	Using the larger drill bit, DRILL IN REVERSE for a few turns on BOTH SIDES of each hole.
+	Using the larger drill bit, regular direction to finish drilling the holes through.
+	Make sure screws slide through easily. Drill again if needed.
+	Remove all chips and burrs from the holes. 
+	Leave masking tape on until assembly.
+
+Assembling the FEP VAT:
+----------------------
+
+Print the VAT parts:
+	The VAT and the STRETCH RING are designed to be printed together.
+	The ring functions as a print-in-place support for the recessed area under the vat.
+	A SOLID print is recommended, however you may opt for 3 walls and moderate in-fill if you have warping issues with solid prints.
+	Use PLA, PLA+, or Tough PLA; color does not matter.
+	Do not use ABS as the resin will melt it over time!
+
+Prepare the FEP sheet:
+	* Do not remove sheet protectors or masking tape yet!
+	Lay the FEP sheet on top of the acrylic plate
+	* Do not puncture the four vacuum relief holes at the corners, only the four OUTER corner holes.
+	Use the small screwdriver to puncture holes along the outer edge of the plate.
+
+Assemble the VAT:
+	Place a washer on each of the machine screws.
+	Remove the masking tape from the acrylic plate.
+	Orient the smoother side of the plate facing up. 
+	Place a screw in each of the corners of the plate from the bottom, pointing upwards.
+	Set the plate with four screws onto a microfiber cloth. 
+	Place the STRETCH RING onto the plate (wide side down).
+	Peel ONE SIDE of the FEP sheet protector off, and place that side down onto the four bolts.
+	Remove the other sheet protector from the top of the FEP sheet.
+	Carefully add all of the other bolts up from the bottom, through the plate, ring, and FEP sheet.
+	Place the VAT part upside down.
+	Take the plate with FEP sheet and flip it over.
+	Place the plate and sheet assembly onto the VAT part.
+	Start each screw into the VAT holes a few turns, making sure they are straight!
+	PUSH the entire plate and FEP sheet down against the VAT, sliding down the screws.
+	Snug the screws up to the plate, but do not tighten yet.
+	Go around the plate in one direction in this pattern to tighten the screws:
+	Screw, skip, skip, screw, skip, skip, screw, skip two, screw ...
+	Continue around three times until screws are firm.
+	Repeat again, this time bringing the screws to evenly tight.
+	* Careful not to over-tighten screws! Gently proceed and repeat until everything is even!
+	
+Prepare the Printer for the new FEP Vat:
+----------------------------------------
+
+Preparing the Tilt-Plate in the machine:
+	You will be applying four strips of felt to the large flat, rectangular surface the vat will sit on.
+	Apply the side strips first, then the front and rear, covering the entire flat metal surface.
+
+Change machine settings:
+	EXTREMELY IMPORTANT: You must change the "Z-Reset Position" to "1850" and double-click to save.
+	This setting is accessed via "SETUP" then "advanced_setting" then "Z-Reset Position"
+
+Level the vat:
+	* This process is different than that of the standard instructions.
+	* The FELT allows a slight spring relief for the pressure of the initial layers.
+	Switch the machine OFF.
+	Install the new vat.
+	Switch the printer ON. (warning, build plate may move!)
+	Change the Z-Reset by increasing by 5 to 1855, double click to save.
+	Build plate should move down into the VAT. If not repeat the setting and save again.
+	Check to see if there is pressure against the FEP in the vat:
+	* When the build plate is pressing on the FEP firmly enough you will feel a slight gap
+	  between the top of the printed VAT and the part of sheet metal that holds it down. 
+	* This gap should be just enough to feel with your finger-nail. 
+	* The exact amount is not important, only that there is a slight gap caused by the pressure
+	If there is no pressure and gap on any corner, return to settings and add 5 more and save.
+	Repeat until you feel a pressure gap on at least two corners!
+	
+	Standard Build Plate:
+	Remove one side of your printer enclosure.
+	From under the Tilt Plate you can now adjust the level of the vat
+	* You want all four corners to have similar pressure, but they do not need to be exact.
+	
+	Adjustable Build Plate:
+	Release the tilt screws, press the plate firmly, then re-tighten the screws.
+	In settings, add 5 more and save. Check the gap on four corners for proper pressure.
+	
+	The Pressure gap should be approximately a fingernail or less on all four corners.
+	You may need to add a few points to the Z-reset as the felt ages.
+	* The felt may need to be replaced eventually as it flattens over time.
+	* You will not need to re-level the plate until that time.
+
+Printer settings for the new MOAI FDM FEP VAT:
+---------------------------------------------
+
+Calibrating the surface height:
+	Your new FEP sheet is now at a slightly different height than the PDMS goop. You need to re-calibrate ONCE.
+	IMPORTANT: REMOVE YOUR BUILD PLATE FOR THIS TEST! FEP Vat should be installed, clean, and empty!
+	Print out your handy "Calibration_Circle.PDF" IMPORTANT: Make sure scaling is set to 100% in the print menu!
+	Add "P_yuan-test.gcode" to your gcode folder on your SD card.
+	Run the test file as a print, and see if it matches the circle.
+	If the circle is too small, increase the "X Size" and "Y Size" numbers and re-try.
+	Once it's on the circle, look at the ovality:
+	- If it touches on left-right but not front-back, adjust "X Size"
+	- If it touches on front-back but not left-right, adjust "Y Size"
+	When you have a perfect circle, you are done with calibration.
+
+TILT and LIFT settings:
+	* If you wish, you may keep and use the tilt function as the machine was originally designed.
+	* You may also experiment with partial tilt and partial lift.
+	* Start with "Initial" speeds low at first.
+	* "Fast" resins will allow you to use faster "Initial" separation speeds.
+
+	To disable TILT and only use LIFT with the FEP vat:
+	Set "PM Reset Position" = 0 to disable PM motor
+	Set "Z Follows" = -30 (this should be a NEGATIVE value for upward movement!)
+	Set "Z Initial Speed" = 2 (this should be a LOW value to prevent separation from the build plate)
+	Set "PM Initial Speed" = 0
+
+SPEED MULTIPLIER: (Printing with different resins is possible from a single g-code!)
+	The newest firmware fixes a number of things, one of which is the unlocking the speed multiplier up to 50x!
+	What is the speed multiplier? The thing they told you not to touch all this time is now your best friend!
+	This is "XY Speed SET" in "advanced_setting" and internally multiplies the speed set in the G-Code.
+		(Laser galvos can move 100x as fast as an FDM print head!)
+	You can use ONE print file ("PartExample_60micron") from Cura then adjust the multiplier on the machine to suit the resin.
+	I have found old standard opaque resins that like 5x, and some high-speed resins that work well at 40x!
+	Each of your resins will have a preferred speed range, say 12x to 15x, depending on their temperature.
+	Once you find that range, label your resins, and you can print in any color with one file by changing the multiplier!
+
+LASER POWER: (Fine-tune your DOT, EXPERIMENTAL)
+	The laser power performs very well for MSLA resins around 60% and results in the spot-size arount 67 microns.
+	In CURA this setting coresponds to the LINE WIDTH for your profile. The new profiles are set to 0.0067 width.
+	Playing with this setting can let you make smaller prints more detailed, or larger prints faster.
+	A lower laser power cures resin slower, but has a smaller spot size. You can lower line width and layer height.
+	A higher laser power cures resin faster, but has a larger spot size. You can raise line width and layer height.
+

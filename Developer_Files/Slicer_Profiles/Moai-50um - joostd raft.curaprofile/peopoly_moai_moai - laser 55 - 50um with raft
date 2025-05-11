@@ -1,0 +1,33 @@
+[general]
+version = 2
+name = Moai - Laser 55 - 50um with raft
+definition = peopoly_moai
+
+[metadata]
+type = quality_changes
+quality_type = high
+setting_version = 1
+
+[values]
+adhesion_type = raft
+layer_0_z_overlap = 0
+layer_height_0 = 0.05
+raft_airgap = 0.0
+raft_base_line_spacing = 0.09
+raft_base_line_width = 0.067
+raft_base_speed = 4.5
+raft_base_thickness = 0.1
+raft_interface_line_spacing = 0.09
+raft_interface_line_width = 0.067
+raft_interface_speed = 75
+raft_interface_thickness = 0.1
+raft_margin = 0
+raft_speed = 75
+raft_surface_layers = 20
+raft_surface_line_spacing = 0.09
+raft_surface_thickness = 0.1
+speed_layer_0 = 75
+speed_print = 75
+speed_slowdown_layers = 0
+speed_wall = 75
+
