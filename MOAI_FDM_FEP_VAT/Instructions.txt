@@ -153,29 +153,41 @@ Calibrating the surface height:
 	- If it touches on front-back but not left-right, adjust "Y Size"
 	When you have a perfect circle, you are done with calibration.
 
-TILT and LIFT settings:
-	* If you wish, you may keep and use the tilt function as the machine was originally designed.
-	* You may also experiment with partial tilt and partial lift.
+TILT (PM) and LIFT (Z) settings:
 	* Start with "Initial" speeds low at first.
 	* "Fast" resins will allow you to use faster "Initial" separation speeds.
+	* Important Note: The negative Z_Follows value is saved, but will display "0" when returning to the menu.
+	  You can see this when you attempt to change the value, it will jump to the negative number you had set.
 
-	To disable TILT and only use LIFT with the FEP vat:
-	Set "PM Reset Position" = 0 to disable PM motor
-	Set "Z Follows" = -30 (this should be a NEGATIVE value for upward movement!)
-	Set "Z Initial Speed" = 2 (this should be a LOW value to prevent separation from the build plate)
-	Set "PM Initial Speed" = 0
+	You may keep and use the tilt function using the default firmware settings:
+	* Tested: Works with standard FEP
+	- PM_Reset = 40 (tilt distance)
+	- PM_Initial = 15 (tilt speed)
+	- Z_Follows = 10 (FOLLOWS tilt to reduce separation forces)
+	- Z_Initial = 2 (move slowly at first)
 
-SPEED MULTIPLIER: (Printing with different resins is possible from a single g-code!)
-	The newest firmware fixes a number of things, one of which is the unlocking the speed multiplier up to 50x!
-	What is the speed multiplier? The thing they told you not to touch all this time is now your best friend!
-	This is "XY Speed SET" in "advanced_setting" and internally multiplies the speed set in the G-Code.
-		(Laser galvos can move 100x as fast as an FDM print head!)
-	You can use ONE print file ("PartExample_60micron") from Cura then adjust the multiplier on the machine to suit the resin.
-	I have found old standard opaque resins that like 5x, and some high-speed resins that work well at 40x!
-	Each of your resins will have a preferred speed range, say 12x to 15x, depending on their temperature.
-	Once you find that range, label your resins, and you can print in any color with one file by changing the multiplier!
+	To disable TILT and use LIFT to peel only:
+	* Tested: currently unsuccessful
+	- PM_Reset = 0 (disable tilt)
+	- PM_Initial = 0 (disable tilt)
+	- Z_Follows = -250 (NEGATIVE value results in LIFT, each -100 is 1mm of lift)
+	- Z_Initial = 2 (SLOW value to prevent separation from the build plate)
 
-LASER POWER: (Fine-tune your DOT, EXPERIMENTAL)
+	You may also experiment with partial tilt and partial lift.
+	*** UNTESTED ***
+	- PM_Reset = 20 (tilt distance)
+	- PM_Initial = 15 (tilt speed)
+	- Z_Follows = -100 (1mm Lift)
+	- Z_Initial = 2 (move slowly at first)
+
+SPEED MULTIPLIER: (Printing with different speed resins is possible from a single g-code!)
+	"XY Speed SET" in "advanced_setting" multiplies the speed called in G-Code.(example: 15x 120mm/s moves the spot at 1800mm/s!)
+	* The newest firmwares unlocking the speed multiplier up to 40x or 50x for high-speed resins.
+	* You can use ONE print file ("PartExample_60micron") from Cura then adjust the multiplier to suit the resin.
+	* Standard opaque resins might work around 5x, and some high-speed resins may work up to 40x!
+	* Each of your resins will have a preferred speed range, say 12x to 15x, depending on their temperature.
+
+LASER POWER: (Fine-tune laser DOT, EXPERIMENTAL)
 	The laser power performs very well for MSLA resins around 60% and results in the spot-size arount 67 microns.
 	In CURA this setting coresponds to the LINE WIDTH for your profile. The new profiles are set to 0.0067 width.
 	Playing with this setting can let you make smaller prints more detailed, or larger prints faster.
