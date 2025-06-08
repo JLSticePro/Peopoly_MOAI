@@ -1,22 +1,22 @@
 [general]
 version = 4
-name = Normal
+name = Extra High
 definition = peopoly_moai
 
 [metadata]
 setting_version = 15
 type = quality
-quality_type = normal
+quality_type = extra high
 weight = 0
 global_quality = True
 
 [values]
-layer_height = 0.06
-speed_print = 120
-speed_layer_0 = 12
-speed_travel = 120
+layer_height = 0.20
+speed_print = 185
+speed_layer_0 = 18
+speed_travel = 185
 speed_travel_layer_0 = 100
-speed_wall = 120
+speed_wall = 185
 speed_slowdown_layers = 10
 wall_line_count = 999999
 wall_thickness = 0
